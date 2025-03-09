@@ -1,5 +1,4 @@
 {% extends "index.html" %}
-{% block title %}Login page{% endblock%}
 {% block navbar %}
 {{super()}}
 {% endblock%}
@@ -20,7 +19,7 @@
         </div>
         <h3 align="left">Enter your password.</h3>
         <div class="phone-input">
-            <input type="text" placeholder="password", name="password">
+            <input type="password" placeholder="password", name="password">
         </div>
         <button class="login", type="submit", name="submit">Login</button>
         <p class="footer">New user?<a href="/register">Register</a></p>
@@ -28,6 +27,8 @@
         
     </div>
 </form>
+{% endblock %}
+{% block footer %}
 {% endblock %}
 {% block styles %}
 <style>
