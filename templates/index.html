@@ -89,7 +89,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 40px;">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
               <li class="nav-item" style="margin-right: 20px;">
-                <a class="nav-link active" aria-current="page" href="#">Beauty</a>
+                <a class="nav-link" href="{{ url_for('beauty') }}">Beauty</a>
               </li>
               <li class="nav-item" style="margin-right: 20px;">
                 <a class="nav-link" href="{{ url_for('panels') }}">Panels</a>
@@ -217,7 +217,7 @@
 </div>
 
 <!--conatiner 2-->
-<h2 style="padding-left:145px;font-size: 30px;">New and noteworthy</h2>
+<h2 style="padding-left:145px;font-size: 30px;margin-top: 60px;">New and noteworthy</h2>
 <!-- <div class="new-noteworthy"style="display: flex;gap: 20px;margin-left: 120px;margin-right: 145px;overflow-x: auto;scroll-behavior: smooth;-ms-overflow-style: none;scrollbar-width: none;padding: 10px;" style="object-fit: contain;height: 350px;width: 350px;background-color: transparent;"> -->
 <div style="position: relative;">
     <button onclick="scrollContentLeft('scroll-container-2')"  style="width: 50px;height: 50px;background-color: white;border-radius: 50%;display: flex;align-items: center;justify-content: center;box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);border: none;cursor: pointer;font-size: 22px;font-weight: 600;color: black;position: absolute; left: -10px; transform: translateY(-50%);margin-top: 140px;margin-left: 120px;">
@@ -249,7 +249,7 @@
 </div>
 
 <!--container 3-->
-<h2 style="padding-left:145px;font-size: 30px;margin-top: 50px;">Most booked services</h2>
+<h2 style="padding-left:145px;font-size: 30px;margin-top: 70px;">Most booked services</h2>
 <!-- <div class="new-noteworthy" style="display: flex;gap: 20px;margin-left: 120px;margin-right: 145px;overflow-x: auto;scroll-behavior: smooth;-ms-overflow-style: none;scrollbar-width: none;padding: 10px;" style="object-fit: contain;height: 350px;width: 350px;background-color: transparent;"> -->
 <div style="position: relative;">
     <button onclick="scrollContentLeft('scroll-container-3')"  style="width: 50px;height: 50px;background-color: white;border-radius: 50%;display: flex;align-items: center;justify-content: center;box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);border: none;cursor: pointer;font-size: 22px;font-weight: 600;color: black;position: absolute; left: -10px; transform: translateY(-50%);margin-top: 140px;margin-left: 120px;">
@@ -291,7 +291,10 @@
 <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template/w_1232,dpr_2,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/growth/luminosity/1736922795409-bece35.jpeg" style="margin-left: 145px; margin-top: 80px;height: 415px;">
 
 <!--salon for women-->
-<h2 style="padding-left:135px;font-size: 30px;margin-top: 90px;">Salon for women</h2>
+<div style="display: flex;flex-direction: row;">
+  <h2 style="padding-left:135px;font-size: 30px;margin-top: 90px;">Salon for women</h2>
+  <div style="align-items: end;color: rgb(96, 0, 128);margin-left: 920px;border: 2px solid #ddd;border-radius: 10px;border-radius: 5px;margin-top: 90px;width: 60px;text-align: center;padding: 5px;">See all</div>
+</div>
 <div class="spaforwomen" style="display: flex;flex-direction: row;">
   <div class="flex-container" style="display: flex;flex-direction: column;align-items: center; border: 1px solid #ddd;border-radius: 10px;padding: 20px;width: 250px;height: 300px;margin-left: 130px;margin-top: 20px; "> 
     <div class="text-box"style="font-size: 18px;margin-bottom: 10px;align-items:left">Waxing</div><div class="image-box"style="border-radius: 5px;" >
@@ -322,7 +325,7 @@
 
 <!--spa for women-->
 <h2 style="padding-left:135px;font-size: 30px;margin-top: 90px;">Spa for women</h2>
-<h6 style="margin-left: 135px;">Refresh. Rewind. Rejuvenate.</h6>
+<h6 style="margin-left: 135px;color: gray;">Refresh. Rewind. Rejuvenate.</h6>
 <div class="spaforwomen" style="display: flex;flex-direction: row;">
   <div class="flex-container" style="display: flex;flex-direction: column;align-items: center; border: 1px solid #ddd;border-radius: 10px;padding: 20px;width: 250px;height: 300px;margin-left: 130px;margin-top: 20px; "> 
     <div class="text-box"style="font-size: 18px;margin-bottom: 10px;align-items:left">Stress relief</div><div class="image-box"style="border-radius: 5px;" >
@@ -343,7 +346,10 @@
 <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template/w_1232,dpr_1,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/growth/luminosity/1730813300631-fc044e.jpeg" style="margin-left: 145px; margin-top: 80px;">
 
 <!--pest control-->
-<h2 style="padding-left:135px;font-size: 30px;margin-top: 90px;">Cleaning & pest control</h2>
+<div style="display: flex;flex-direction: row;">
+  <h2 style="padding-left:135px;font-size: 30px;margin-top: 90px;">Cleaning & pest control</h2>
+  <div style="align-items: end;color: rgb(96, 0, 128);margin-left: 900px;border: 2px solid #ddd;border-radius: 10px;border-radius: 5px;margin-top: 90px;width: 60px;text-align: center;padding: 5px;">See all</div>
+</div>
 <div class="spaforwomen" style="display: flex;flex-direction: row;">
   <div class="flex-container" style="display: flex;flex-direction: column;align-items: center; border: 1px solid #ddd;border-radius: 10px;padding: 20px;width: 250px;height: 300px;margin-left: 130px;margin-top: 20px; "> 
     <div class="text-box"style="font-size: 18px;margin-bottom: 10px;align-items:left">Full home cleaning</div><div class="image-box"style="border-radius: 5px;" >
@@ -376,7 +382,10 @@
 <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template/w_1232,dpr_2,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/growth/luminosity/1736922795409-bece35.jpeg" style="margin-left: 145px; margin-top: 80px;height: 415px;">
 
 <!--appliance server-->
-<h2 style="padding-left:135px;font-size: 30px;margin-top: 90px;">Appliance Service & Repair</h2>
+<div style="display: flex;flex-direction: row;">
+  <h2 style="padding-left:135px;font-size: 30px;margin-top: 90px;">Appliance & service repair</h2>
+  <div style="align-items: end;color: rgb(96, 0, 128);margin-left: 875px;border: 2px solid #ddd;border-radius: 10px;border-radius: 5px;margin-top: 90px;width: 60px;text-align: center;padding: 5px;">See all</div>
+</div>
 <div class="spaforwomen" style="display: flex;flex-direction: row;">
   <div class="flex-container" style="display: flex;flex-direction: column;align-items: center; border: 1px solid #ddd;border-radius: 10px;padding: 20px;width: 250px;height: 300px;margin-left: 130px;margin-top: 20px; "> 
     <div class="text-box"style="font-size: 18px;margin-bottom: 10px;align-items:left">AC Service & repair</div><div class="image-box"style="border-radius: 5px;" >
@@ -406,7 +415,10 @@
 </div>
 
 <!--quick home repairs and conatiner 4-->
-<h2 style="padding-left:140px;font-size: 30px;margin-top: 50px;">Quicks home repairs</h2>
+<div style="display: flex;flex-direction: row;">
+  <h2 style="padding-left:135px;font-size: 30px;margin-top: 100px;">Quick home repairs</h2>
+  <div style="align-items: end;color: rgb(96, 0, 128);margin-left: 920px;border: 2px solid #ddd;border-radius: 10px;border-radius: 5px;margin-top: 90px;width: 60px;text-align: center;padding: 5px;">See all</div>
+</div>>
 <div style="position: relative;">
     <button onclick="scrollContentLeft('scroll-container-4')"  style="width: 50px;height: 50px;background-color: white;border-radius: 50%;display: flex;align-items: center;justify-content: center;box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);border: none;cursor: pointer;font-size: 22px;font-weight: 600;color: black;position: absolute; left: -10px; transform: translateY(-50%);margin-top: 140px;margin-left: 120px;">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);">
@@ -418,7 +430,7 @@
             <path d="M10 7L15 12L10 17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
     </button>
-    <div id="scroll-container-3" class="scroll-container" style="display: flex; flex-direction: row;width: 1250px;column-gap: 25px;overflow-x: auto;scroll-behavior: smooth;-ms-overflow-style: none;scrollbar-width: none;white-space: nowrap;padding: 10px;margin-left: 120px;">
+    <div id="scroll-container-4" class="scroll-container" style="display: flex; flex-direction: row;width: 1250px;column-gap: 25px;overflow-x: auto;scroll-behavior: smooth;-ms-overflow-style: none;scrollbar-width: none;white-space: nowrap;padding: 10px;margin-left: 120px;">
         <div><img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template/w_233,dpr_2,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/supply/customer-app-supply/1727776710805-0ce8d7.jpeg" alt="Haircut for men" height="233px" width="233px">
           <p>Drill & hang(wall decor)</p><p>★4.88(486K)</p><p>₹259</p></div>
         <div><img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template/w_233,dpr_2,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/growth/luminosity/1652172643970-9ad67b.png" alt="Intense cleaning" height="233px" width="233px">
@@ -460,14 +472,14 @@
     <div class="text-box"style="font-size: 18px;margin-bottom: 10px;align-items:left">Post workout</div><div class="image-box"style="border-radius: 5px;" >
       <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template/w_231,dpr_2,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/supply/customer-app-supply/1700135829701-85b36c.jpeg" alt="Waxing" style="height: 230px;width: 247px;margin-top: 10px; border-radius: 5px;">
     </div>
-</div>
+  </div>
 </div>
 
-<!--lady with ro-->
+<!--lady with RO-->
 <img src="https://res.cloudinary.com/urbanclap/image/upload/t_high_res_template/w_1232,dpr_2,fl_progressive:steep,q_auto:low,f_auto,c_limit/images/growth/luminosity/1734687235149-cd2754.jpeg" style="margin-left: 145px; margin-top: 80px;height: 415px;">
 
-<!--massage for kids and men-->
-<h2 style="padding-left:135px;font-size: 30px;margin-top: 90px;">Massage for kids & men</h2>
+<!--salon for kids and men-->
+<h2 style="padding-left:135px;font-size: 30px;margin-top: 90px;">Salon for kids & men</h2>
 <div class="spaforwomen" style="display: flex;flex-direction: row;">
   <div class="flex-container" style="display: flex;flex-direction: column;align-items: center; border: 1px solid #ddd;border-radius: 10px;padding: 20px;width: 250px;height: 300px;margin-left: 130px;margin-top: 20px; "> 
     <div class="text-box"style="font-size: 18px;margin-bottom: 10px;align-items:left">Hair cut & beard styling</div><div class="image-box"style="border-radius: 5px;" >
