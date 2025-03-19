@@ -42,6 +42,18 @@ def home():
     items = Item.query.all()
     return render_template('index.html', items=items)
 
+@app.route('/beauty')
+def beauty():
+    return render_template('beauty.html')
+
+@app.route('/panels')
+def panels():
+    return render_template('panels.html')
+
+@app.route('/native')
+def native():
+    return render_template('native.html')
+
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == "POST":
@@ -132,18 +144,6 @@ def view_cart():
     cart_items = db.session.query(Item, Cart.quantity).join(Cart).filter(Cart.user_id == user_id).all()
     total_price = sum(item.price * quantity for item, quantity in cart_items)
     return render_template('cart.html', cart_items=cart_items, total_price=total_price)
-
-@app.route('/beauty')
-def beauty():
-    return render_template('beauty.html')
-
-@app.route('/panels')
-def panels():
-    return render_template('panels.html')
-
-@app.route('/native')
-def native():
-    return render_template('native.html')
 
 if __name__ == "__main__":
     with app.app_context():
